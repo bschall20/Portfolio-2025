@@ -1,0 +1,297 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/**************************************************************/
+/**************************************************************/
+/*************************** GENERAL ***************************/
+/**************************************************************/
+/**************************************************************/
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**************************************************************/
+/**************************************************************/
+/***************************** NAV ****************************/
+/**************************************************************/
+/**************************************************************/
+
+#navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 6vh;
+  padding: 0 8rem;
+  /* font-weight: 500; */
+}
+.navTitle a, .navLinks a {
+  color: black;
+  text-decoration: none;
+  padding: 0.2rem .6rem;
+}
+.navTitle {
+  font-size: 1.5rem;
+}
+.navLinks {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  width: 20%;
+}
+.navLinks a {
+  border-bottom: 2px solid transparent;
+  bottom: 0;
+  position: relative;
+}
+.navLinks a:hover {
+  border-bottom: 2px solid #E63946;
+  bottom: 2px;
+  color: #457B9D;
+}
+
+
+
+
+
+
+
+
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************** HOME ****************************/
+/**************************************************************/
+/**************************************************************/
+
+#home {
+  flex-direction: column;
+  margin: auto;
+}
+
+.homeIntro {
+  height: 94vh;
+  width: 65%;
+  justify-content: space-around;
+  /* flex: 1 1 0; */
+}
+
+.homeIntroL {
+  /* flex: 1 1 0; */
+  width: 50%;
+}
+.homeIntroParagraph span, .homeIntroTitle, #home h1, .scrollDown {
+  color: #1D3557;
+  font-weight: 600;
+}
+#home h1 {
+  font-size: 2.75rem;
+}
+.homeIntroTitle {
+  color: #E63946;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.homeIntroParagraph, .scrollDown {
+  font-size: 1.2rem;
+}
+.scrollDown {
+  color: #E63946;
+  position: absolute;
+  margin-top: 4rem;
+  font-size: 1rem;
+  animation: float 2.5s ease-in-out infinite;
+}
+.scrollDownIcon {
+  font-size: 1.75rem;
+  margin-bottom: .25rem;
+}
+
+@keyframes float {
+0% {
+  transform: translate(0, 0);
+}
+50% {
+  transform: translate(0, -8px);
+}
+100% {
+  transform: translate(0, 0);
+}
+}
+
+
+
+
+
+.contactMeBtn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 24px;
+  border: 1px solid #1a304e;
+  border-radius: 8px;
+  background: #4985da;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4985da), to(#1a304e));
+  background: -moz-linear-gradient(top, #4985da, #1a304e);
+  background: linear-gradient(to bottom, #4985da, #1a304e);
+  /* background: -moz-linear-gradient(right, #4985da, #1a304e);
+  background: linear-gradient(to left, #4985da, #1a304e); */
+  -webkit-box-shadow: #59a1ff 0px 0px 10px 0px;
+  -moz-box-shadow: #59a1ff 0px 0px 10px 0px;
+  box-shadow: #59a1ff 0px 0px 10px 0px;
+  text-shadow: #0f1b2c 1px 1px 1px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+.contactMeBtn:hover,
+.contactMeBtn:focus {
+  border: 1px solid #1d3557;
+  background: #58a0ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#58a0ff), to(#1f3a5e));
+  background: -moz-linear-gradient(top, #58a0ff, #1f3a5e);
+  background: linear-gradient(to bottom, #58a0ff, #1f3a5e);
+  color: #ffffff;
+  text-decoration: none;
+}
+.contactMeBtn:active {
+  background: #1a304e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a304e), to(#1a304e));
+  background: -moz-linear-gradient(top, #1a304e, #1a304e);
+  background: linear-gradient(to bottom, #1a304e, #1a304e);
+}
+
+
+.contactMeBtnIcon {
+  font-size: 1.75rem;
+  margin-bottom: 0.15rem;
+}
+
+
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background: url('./images/HomeProfilePic.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 425px;
+  width: 425px;
+  box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+  animation: animate 12s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes animate{
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+
+  /* 0%{
+    border-radius: 56% 82% 66% 43% / 56% 82% 66% 43%
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+  }
+  100%{
+    border-radius: 56% 82% 66% 43% / 56% 82% 66% 43%
+  } */
+}
+
+
+
+
+
+
+.homeProjects {
+  background-color: blue;
+  width: 100%;
+}
+
+
+
+.homeAbilities {
+  /* background-color: blue;
+  width: 100%; */
+  flex-direction: column;
+  width: 65%;
+}
+
+.homeAbilities h2 {
+  margin-bottom: 0;
+}
+.homeAbilities h3, .homeAbilities h2 {
+  margin-top: 2rem;
+}
+.abilityTitle {
+  color: #E63946;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.skillsSection, .toolsSection{
+  flex-wrap: wrap;
+}
+
+.toolsSection{
+  width: 100%;
+}
+
+.skillsToolLogo {
+  border: solid 1px #1D3557;
+  border-radius: 15px;
+  bottom: 0px;
+  color: #1D3557;
+  font-size: 5rem;
+  flex: 1 0 12%;
+  margin: 1rem;
+  padding: .15rem 2rem;
+  position: relative;
+  text-align: center;
+  transition: all ease 0.75s;
+}
+
+.skillsToolLogo:hover {
+  border-color: #E63946;
+  bottom: 10px;
+  color: #E63946;
+}
+
+
+
+/**************************************************************/
+/**************************************************************/
+/*************************** FOOTER ***************************/
+/**************************************************************/
+/**************************************************************/
+
+
+#footer {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footerBoxR {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
