@@ -13,9 +13,9 @@ function Footer() {
             <div className="footerBoxL">
                 <p className="connectFooter pt-3">Connect With Me: 
                     <br className="footerBreak" />
-                    <a href="https://www.github.com" target="_blank" rel="noreferrer"><FaGithub className="connectLogo ms-2 me-1 mb-1"/></a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noreferrer"><FaSquareInstagram className="connectLogo mx-1 mb-1"/></a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin className="connectLogo mx-1 mb-1"/></a>
+                    <a href="https://www.github.com/bschall20" target="_blank" rel="noreferrer"><FaGithub className="connectLogo ms-2 me-1 mb-1"/></a>
+                    <a href="https://www.instagram.com/b_schall19" target="_blank" rel="noreferrer"><FaSquareInstagram className="connectLogo mx-1 mb-1"/></a>
+                    <a href="https://www.linkedin.com/in/brennan-schall-36bb14139" target="_blank" rel="noreferrer"><FaLinkedin className="connectLogo mx-1 mb-1"/></a>
                 </p>
                 <p className="copyrightFooter">Copyright © {new Date().getFullYear()}. Brennan Schall. <br/>All Rights Reserved.</p>
                 <p className="footerBrand" ><a href="/">Brennan Schall</a></p>

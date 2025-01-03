@@ -15,6 +15,10 @@
   justify-content: center;
 }
 
+.hidden {
+  display: none;
+}
+
 /**************************************************************/
 /**************************************************************/
 /***************************** NAV ****************************/
@@ -253,6 +257,11 @@
   width: 100%;
 }
 
+.skillTitle{
+  font-size: 1rem;
+  margin-bottom: -1.18rem;
+  transition: all ease 0.75s;
+}
 .skillsToolLogo {
   border: solid 1px #1D3557;
   border-radius: 15px;
@@ -264,13 +273,86 @@
   padding: .15rem 2rem;
   position: relative;
   text-align: center;
-  transition: all ease 0.75s;
+  transition: all ease 0.5s;
 }
 
 .skillsToolLogo:hover {
   border-color: #E63946;
   bottom: 10px;
   color: #E63946;
+}
+
+.HTML:hover {
+  border-color: #EA6228;
+  color: #EA6228;
+}
+.CSS:hover {
+  border-color: #29A4D9;
+  color: #29A4D9;
+}
+.JavaScript:hover {
+  border-color: #F0DC4E;
+  color: #F0DC4E;
+}
+.React:hover {
+  border-color: #61DBFB;
+  color: #61DBFB;
+}
+.Postgresql:hover {
+  border-color: #31648C;
+  color: #31648C;
+}
+.Bootstrap:hover {
+  border-color: #8311F6;
+  color: #8311F6;
+}
+.NodeJS:hover {
+  border-color: #529F41;
+  color: #529F41;
+}
+.ExpressJS:hover {
+  border-color: #485660;
+  color: #485660;
+}
+.JQuery:hover {
+  border-color: #076FAE;
+  color: #076FAE;
+}
+.RESTfulAPI:hover {
+  border-color: #01B5E6;
+  color: #01B5E6;
+}
+.Responsive:hover {
+  border-color: #000000;
+  color: #000000;
+}
+.Git:hover {
+  border-color: #F05033;
+  color: #F05033;
+}
+.VSCode:hover {
+  border-color: #0A69A8;
+  color: #0A69A8;
+}
+.PGAdmin:hover {
+  border-color: #31648C;
+  color: #31648C;
+}
+.Firebase:hover {
+  border-color: #F3C540;
+  color: #F3C540;
+}
+.Github:hover {
+  border-color: #1F2328;
+  color: #1F2328;
+}
+.ChromeDev:hover {
+  border-color: #EA4335;
+  color: #EA4335;
+}
+.Kinsta:hover {
+  border-color: #FF1D00;
+  color: #FF1D00;
 }
 
 
