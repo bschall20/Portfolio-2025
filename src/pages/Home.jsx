@@ -1,16 +1,15 @@
 // import React, { useState } from "react";
 // import AbilitiesHome from "../components/AbilitiesHome";
+import ProjectBox from "../components/ProjectBox";
+import Projects from "../Projects.js"
 import SkillToolCard from "../components/SkillToolCard";
 import Skills from "../Skills.js";
 import Tools from "../Tools.js";
 import { IoIosSend } from "react-icons/io";
 import { RiScrollToBottomFill } from "react-icons/ri";
 
+
 const Home = () => {
-  // const [skill, setSkill] = useState()
-  // const HoverSkill = (hoveredSkill) => {
-  //   setSkill(hoveredSkill)
-  // }
 
   return (
     <div id="home" className="center">
@@ -22,7 +21,6 @@ const Home = () => {
             Self-taught developer that excels in communication and working in
             teams with a desire of being a <span>Full Stack Developer.</span>
           </p>
-          {/* <button className="contactMeBtn">Contact Me</button> */}
           <a className="contactMeBtn" href="/">
             Contact Me <IoIosSend className="contactMeBtnIcon" />
           </a>
@@ -36,20 +34,53 @@ const Home = () => {
           <div className="wrapper">
             <div className="box">{/* image of self is here */}</div>
           </div>
-
-          {/* <img src={family} alt="Brennan Schall" /> */}
         </div>
       </section>
 
 
 
-      
 
-      <section className="homeProjects">
-        <h2>Home Projects</h2>
+      <section className="homeProjects center">
+        <h2>My Projects</h2>
+        <div className="projectsTop">
+          {Projects.slice(0,2).map((dataObj) => {
+            return (
+              <ProjectBox
+                id={dataObj.id}
+                image={dataObj.image}
+                alt={dataObj.alt}
+                projectClass={dataObj.projectClass}
+                title={dataObj.title}
+                description={dataObj.description}
+                skill1={dataObj.skill1}
+                skill2={dataObj.skill2}
+                skill3={dataObj.skill3}
+                website={dataObj.website}
+                github={dataObj.github}
+              />
+            );
+          })}
+        </div>
+        <div className="projectsBottom">
+          {Projects.slice(2,4).map((dataObj) => {
+            return (
+              <ProjectBox
+                id={dataObj.id}
+                image={dataObj.image}
+                alt={dataObj.alt}
+                projectClass={dataObj.projectClass}
+                title={dataObj.title}
+                description={dataObj.description}
+                skill1={dataObj.skill1}
+                skill2={dataObj.skill2}
+                skill3={dataObj.skill3}
+                website={dataObj.website}
+                github={dataObj.github}
+              />
+            );
+          })}
+        </div>
       </section>
-
-
 
 
 
@@ -57,7 +88,9 @@ const Home = () => {
       {/* <AbilitiesHome /> */}
       <section className="homeAbilities center">
         <h2>My Abilities</h2>
-        <h3>Obtained <span className="abilityTitle">Skills</span></h3>
+        <h3>
+          Obtained <span className="abilityTitle">Skills</span>
+        </h3>
         <div className="skillsSection center">
           {Skills.map((dataObj) => {
             return (
@@ -70,7 +103,9 @@ const Home = () => {
             );
           })}
         </div>
-        <h3><span className="abilityTitle">Tools</span> I Craft With</h3>
+        <h3>
+          <span className="abilityTitle">Tools</span> I Craft With
+        </h3>
         <div className="toolsSection center">
           {Tools.map((dataObj) => {
             return (
@@ -84,10 +119,6 @@ const Home = () => {
           })}
         </div>
       </section>
-
-
-
-
 
       <section className="homeContact">
         <p>Home Contact</p>
