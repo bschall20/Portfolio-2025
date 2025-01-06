@@ -19,6 +19,10 @@
   display: none;
 }
 
+#home h2 {
+  color: #1D3557;
+}
+
 /**************************************************************/
 /**************************************************************/
 /***************************** NAV ****************************/
@@ -94,9 +98,12 @@
   color: #1D3557;
   font-weight: 600;
 }
-#home h1 {
+/* #home h1 {
   font-size: 2.75rem;
-}
+} */
+/* #home h3 {
+  font-size: 1.5rem;
+} */
 .homeIntroTitle {
   color: #E63946;
   margin-top: 1rem;
@@ -236,6 +243,9 @@
   padding: 2.5rem 0;
   width: 100%;
 }
+.homeProjects h2 {
+  justify-content: start;
+}
 .projectsTop, .projectsBottom {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -292,12 +302,14 @@
 .projectSkill {
   border-radius: 25px;
   background-color: #F1FAEE;
+  /* border: 1px solid #F1FAEE; */
   padding: .25rem .5rem;
   font-size: .9rem;
 }
 .projectLink {
-  border-radius: 5px;
-  background-color: #457B9D;
+  border-radius: 25px;
+  /* background-color: #457B9D; */
+  border: 1px solid #457B9D;
   color: #F1FAEE;
   padding: .35rem .65rem;
   font-size: .9rem;
@@ -363,13 +375,19 @@
   padding: 1rem 0 2rem;
   width: 65%;
 }
-
 .homeAbilities h2 {
   margin-bottom: 0;
 }
 .homeAbilities h3, .homeAbilities h2 {
   margin-top: 2rem;
 }
+.abilitiesHR {
+  border: 1px solid #E63946;
+  border-radius: 25px;
+  opacity: 1;
+  width: 60%;
+}
+
 .abilityTitle {
   color: #E63946;
   font-weight: 600;
@@ -483,6 +501,75 @@
 }
 
 
+/************************************HOME CONTACT************************************/
+.homeContact {
+  background-color: #A8DADC;
+  flex-direction: column;
+  padding: 1rem 0 2rem;
+  /* width: 65%; */
+  width: 100%;
+}
+.contactContent {
+  /* display: flex;
+  flex-direction: row;
+  width: 65%;
+  justify-content: space-evenly; */
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-auto-rows: minmax(20rem, auto);
+  gap: 3rem;
+  margin-top: 2rem;
+  width: 65%;
+}
+
+.contactInfo {
+  height: 100%;
+  width: 85%;
+}
+.contactBoxes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.contactForm {
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: column; */
+  height: 100%;
+  width: 100%;
+}
+.fullName, .email, .message {
+  border: 1px solid #1D3557;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: .25rem 1rem;
+  width: 100%;
+}
+.message {
+  height: 200px;
+  padding-bottom: 50px;
+  margin-bottom: .25rem;
+}
+.sendMessageBtn {
+  padding: .35rem .5rem;
+  font-size: 1rem;
+}
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socialIcon {
+  color: #1D3557;
+  font-size: 2rem;
+}
+.socialIcon:hover {
+  color: #457B9D;
+}
+
 
 /**************************************************************/
 /**************************************************************/
@@ -492,15 +579,23 @@
 
 
 #footer {
+  color: #F1FAEE;
   background-color: #1D3557;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  flex-direction: row;
+  height: 6vh;
 }
-
-.footerBoxR {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+/* .footerSocial {
+  margin: auto;
+} */
+.copyrightFooter {
+  margin: auto;
+}
+.footerLink {
+  color: #F1FAEE;
+}
+.footerLink:hover {
+  color: #A8DADC;
 }
