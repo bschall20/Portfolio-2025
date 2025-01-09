@@ -569,6 +569,86 @@
 .socialIcon:hover {
   color: #457B9D;
 }
+.successMessage, .errorMessage {
+  border-radius: 15px;
+  margin-top: 1rem;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  text-align: center;
+}
+.successMessage{
+  background-color: rgba(11, 118, 11, 0.61);
+}
+.errorMessage {
+  background-color: rgba(255, 0, 0, 0.452);
+}
+
+
+
+
+
+/**************************************************************/
+/**************************************************************/
+/*************************** ABOUT ***************************/
+/**************************************************************/
+/**************************************************************/
+#about{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 65%;
+  margin: 3rem auto 2rem;
+}
+#about h1, #about h2, #about h3 {
+  color: #1D3557;
+}
+.aboutSections {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-auto-rows: minmax(20rem, auto);
+  gap: 10rem;
+}
+.aboutText {
+  padding: 1rem 0 0 2.5rem;
+}
+.aboutHighlight {
+  color: #E63946;
+  font-weight: 700;
+}
+.aboutImages {
+  height: 100%;
+  width: 100%;
+}
+.aboutImage {
+  height: 100%;
+  width: 100%;
+}
+
+
+/**************************************************************/
+/**************************************************************/
+/*************************** RESUME ***************************/
+/**************************************************************/
+/**************************************************************/
+#resume{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 65%;
+  margin: 3rem auto 2rem;
+}
+.resumeDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.resumeEmbed{
+  height: 90vh;
+  width: 100%;
+}
 
 
 /**************************************************************/

@@ -5,6 +5,7 @@ import Projects from "../Projects.js"
 import SkillToolCard from "../components/SkillToolCard";
 import Skills from "../Skills.js";
 import Tools from "../Tools.js";
+import ContactMe from "../components/ContactMe.jsx"
 import { IoIosSend } from "react-icons/io";
 import { RiScrollToBottomFill } from "react-icons/ri";
 
@@ -21,13 +22,13 @@ const Home = () => {
     <div id="home" className="center">
       <section className="homeIntro center">
         <div className="homeIntroL">
-          <h1>Hello! I'm Brennan.</h1>
+          <h1>Hello, World! I'm Brennan.</h1>
           <p className="homeIntroTitle">Frontend Developer</p>
           <p className="homeIntroParagraph">
             Self-taught developer that excels in communication and working in
             teams with a desire of being a <span>Full Stack Developer.</span>
           </p>
-          <a className="contactMeBtn" href="/">
+          <a className="contactMeBtn" href="#homeContact">
             Contact Me <IoIosSend className="contactMeBtnIcon" />
           </a>
 
@@ -49,9 +50,10 @@ const Home = () => {
       <section className="homeProjects center">
         <h2>My Projects</h2>
         <div className="projectsTop">
-          {Projects.slice(0,2).map((dataObj) => {
+          {Projects.slice(0,2).map((dataObj, index) => {
             return (
               <ProjectBox
+              key={index}
                 id={dataObj.id}
                 image={dataObj.image}
                 alt={dataObj.alt}
@@ -68,9 +70,10 @@ const Home = () => {
           })}
         </div>
         <div className="projectsBottom">
-          {Projects.slice(2,4).map((dataObj) => {
+          {Projects.slice(2,4).map((dataObj, index) => {
             return (
               <ProjectBox
+                key={index}
                 id={dataObj.id}
                 image={dataObj.image}
                 alt={dataObj.alt}
@@ -99,9 +102,10 @@ const Home = () => {
           Obtained <span className="abilityTitle">Skills</span>
         </h3> */}
         <div className="skillsSection center">
-          {Skills.map((dataObj) => {
+          {Skills.map((dataObj, index) => {
             return (
               <SkillToolCard
+                key={index}
                 id={dataObj.id}
                 name={dataObj.name}
                 image={dataObj.image}
@@ -115,9 +119,10 @@ const Home = () => {
         </h3> */}
         <hr className="abilitiesHR"/>
         <div className="toolsSection center">
-          {Tools.map((dataObj) => {
+          {Tools.map((dataObj, index) => {
             return (
               <SkillToolCard
+                key={index}
                 id={dataObj.id}
                 name={dataObj.name}
                 image={dataObj.image}
@@ -128,7 +133,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="homeContact center">
+      <section className="homeContact center" id="homeContact">
           {/* <h2>Contact</h2> */}
           <div className="contactContent center">
             <div className="contactInfo">
@@ -141,13 +146,7 @@ const Home = () => {
               </div>
             </div>
             <div className="contactBoxes">
-              <form className="contactForm">
-                <input type="text" className="fullName" name="fullName" placeholder="Name" required/><br />
-                <input type="text" className="email" name="email" placeholder="Email" required/><br />
-                {/* <input type="text" id="message" name="message" placeholder="Message"/> */}
-                <textarea className="message" name="message" rows="6" maxlength="3000" placeholder="Message" required />
-                <button type="submit" className="contactMeBtn sendMessageBtn">Send Message</button>
-              </form>
+              <ContactMe />
             </div>
           </div>
       </section>
