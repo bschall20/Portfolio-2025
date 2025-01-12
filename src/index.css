@@ -404,7 +404,7 @@
 
 .skillTitle{
   font-size: 1rem;
-  margin-bottom: -1.18rem;
+  margin-bottom: -1.2rem;
   transition: all ease 0.75s;
 }
 .skillsToolLogo {
@@ -596,7 +596,7 @@
   /* align-items: center; */
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   width: 65%;
   margin: 3rem auto 2rem;
 }
@@ -607,22 +607,29 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-auto-rows: minmax(20rem, auto);
-  gap: 10rem;
+  gap: 3rem;
 }
 .aboutText {
   padding: 1rem 0 0 2.5rem;
 }
-.aboutHighlight {
+.aboutText p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.aboutHighlight, .aboutLink {
   color: #E63946;
   font-weight: 700;
+}
+.aboutLink:hover{
+  color: #457B9D;
 }
 .aboutImages {
   height: 100%;
   width: 100%;
 }
 .aboutImage {
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
 }
 
 
