@@ -57,9 +57,10 @@ const Home = () => {
           {Projects.slice(0,1).map((dataObj, index) => {
             return (
               <motion.div
-              initial={{ opacity: 0, x: -400 }}
+              initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0 }}
+              transition={{ duration: 0.5, delay: 0 }}
+              viewport={{ once: true }}
               >
               <ProjectBox
               key={index}
@@ -81,9 +82,10 @@ const Home = () => {
           {Projects.slice(1,2).map((dataObj, index) => {
             return (
               <motion.div
-              initial={{ opacity: 0, x: 400 }}
+              initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0 }}
+              transition={{ duration: 0.5, delay: 0 }}
+              viewport={{ once: true }}
               >
               <ProjectBox
               key={index}
@@ -107,9 +109,10 @@ const Home = () => {
         {Projects.slice(2,3).map((dataObj, index) => {
             return (
               <motion.div
-              initial={{ opacity: 0, x: -400 }}
+              initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0 }}
+              transition={{ duration: 0.5, delay: 0 }}
+              viewport={{ once: true }}
               >
               <ProjectBox
               key={index}
@@ -131,9 +134,10 @@ const Home = () => {
           {Projects.slice(3,4).map((dataObj, index) => {
             return (
               <motion.div
-              initial={{ opacity: 0, x: 400 }}
+              initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0 }}
+              transition={{ duration: 0.5, delay: 0 }}
+              viewport={{ once: true }}
               >
               <ProjectBox
               key={index}
@@ -165,7 +169,12 @@ const Home = () => {
         {/* <h3>
           Obtained <span className="abilityTitle">Skills</span>
         </h3> */}
-        <div className="skillsSection center">
+        <motion.div className="skillsSection center"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0 }}
+            viewport={{ once: true }}
+        >
           {Skills.map((dataObj, index) => {
             return (
               <SkillToolCard
@@ -177,12 +186,17 @@ const Home = () => {
               />
             );
           })}
-        </div>
+        </motion.div>
         {/* <h3>
           <span className="abilityTitle">Tools</span> I Craft With
         </h3> */}
         <hr className="abilitiesHR"/>
-        <div className="toolsSection center">
+        <motion.div className="toolsSection center"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0 }}
+            viewport={{ once: true }}
+        >
           {Tools.map((dataObj, index) => {
             return (
               <SkillToolCard
@@ -194,12 +208,17 @@ const Home = () => {
               />
             );
           })}
-        </div>
+        </motion.div>
       </section>
 
       <section className="homeContact center" id="homeContact">
           {/* <h2>Contact</h2> */}
-          <div className="contactContent center">
+          <motion.div className="contactContent center"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0 }}
+            viewport={{ once: true }}
+          >
             <div className="contactInfo">
               <h2>Reach Out to Me!</h2>
               <p>If you ever want to meet up and discuss coding or other hobbies we share, please reach out to me! Send me a message here, or reach out on social media below!</p>
@@ -212,7 +231,7 @@ const Home = () => {
             <div className="contactBoxes">
               <ContactMe />
             </div>
-          </div>
+          </motion.div>
       </section>
     </div>
   );
