@@ -57,6 +57,7 @@ const Home = () => {
           {Projects.slice(0,1).map((dataObj, index) => {
             return (
               <motion.div
+              key={index}
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0 }}
@@ -82,6 +83,7 @@ const Home = () => {
           {Projects.slice(1,2).map((dataObj, index) => {
             return (
               <motion.div
+              key={index}
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0 }}
@@ -109,6 +111,7 @@ const Home = () => {
         {Projects.slice(2,3).map((dataObj, index) => {
             return (
               <motion.div
+              key={index}
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0 }}
@@ -134,6 +137,7 @@ const Home = () => {
           {Projects.slice(3,4).map((dataObj, index) => {
             return (
               <motion.div
+              key={index}
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0 }}

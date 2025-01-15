@@ -78,8 +78,11 @@
 /***************************** NAV ****************************/
 /**************************************************************/
 /**************************************************************/
-
 #navBar {
+  display: flex;
+  flex-direction: column;
+}
+.navBarTop {
   /* animation: fade-down 1s; */
   display: flex;
   align-items: center;
@@ -89,7 +92,10 @@
   padding: 0 8rem;
   /* font-weight: 500; */
 }
-.navTitle a, .navLinks a {
+.smallNavLinks {
+  display: none;
+}
+.navTitle a, .navLinks a, .navBarBottom a {
   color: black;
   text-decoration: none;
   padding: 0.2rem .6rem;
@@ -108,7 +114,7 @@
   bottom: 0;
   position: relative;
 }
-.navLinks a:hover {
+.navLinks a:hover, .navBarBottomLink:hover {
   border-bottom: 2px solid #E63946;
   bottom: 2px;
   color: #457B9D;
@@ -619,9 +625,10 @@
   /* align-items: center; */
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
   width: 65%;
   margin: 3rem auto 2rem;
+  padding: 5rem 0 15rem;
 }
 #about h1, #about h2, #about h3 {
   color: #1D3557;
@@ -630,6 +637,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 3rem;
+  /* margin: auto; */
 }
 .aboutText {
   padding: 1rem 0 0 2.5rem;
@@ -682,9 +690,14 @@
   flex-direction: column;
   margin-top: 1rem;
 }
-.resumeEmbed{
+/* .resumeEmbed{
   height: 90vh;
   width: 100%;
+} */
+.resumeImage {
+  border: 1px solid black;
+  height: 60%;
+  width: 60%;
 }
 
 
@@ -725,51 +738,207 @@
 
 /* *************************LARGE DEVICE SECTION************************* */
 @media only screen and (max-width: 1600px) {
+  /**************** ABOUT ****************/
   #about {
-    /* padding: 0 5rem; */
     width: 90%;
+    padding-bottom: 8rem;
   }
 }
 @media only screen and (max-width: 1500px) {
+  /**************** ABOUT ****************/
    .aboutSections {
     gap: 4rem;
    }
 }
 
 @media only screen and (max-width: 1300px) {
+  /**************** HOME ****************/
+  .homeIntro {
+    width: 100%;
+  }
+  .projectDescription {
+    width: 100%;
+  }
+  .projectSkills, .projectLinks{
+    width: 100%;
+  }
+  /**************** ABOUT ****************/
   .aboutSections {
     gap: 3rem;
    }
   .aboutImage {
     width: 100%;
   }
+  /**************** RESUME ****************/
+  #resume{
+    width: 90%;
+  }
 }
 
 /* *************************MEDIUM DEVICE SECTION************************* */
 @media only screen and (max-width: 1024px) {
+
+  /**************** NAVBAR ****************/
+  .navBarTop {
+    padding: 0 2rem;
+  }
+  .navBarBottom {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navBarBottomLink {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.374);
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 1rem 3rem 0 1rem;
+    width: 80%;
+    bottom: 0;
+    position: relative;
+  }
+  .navBarBottomLink a:hover {
+    color: #457B9D;
+  }
+  .navLinks a {
+    display: none;
+  }
+  .smallNavLinks {
+    display: block;
+  }
+  .navMenuIcon {
+    font-size: 2rem;
+  }
+  .navMenuIcon:hover {
+    cursor: pointer;
+  }
+
+  /**************** HOME ****************/
+  .homeIntro {
+    flex-direction: column;
+  }
+  .homeIntroL {
+    width: 80%;
+  }
+  .scrollDown {
+    margin-top: 3rem;
+  }
+  .projectsTop, .projectsBottom {
+    width: 90%;
+  }
+  .homeAbilities {
+    width: 90%;
+  }
+  .skillsToolLogo {
+    font-size: 3rem;
+    flex: 1 0 25%;
+  }
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  /**************** ABOUT ****************/
   .aboutImage {
     height: 80%;
+  }
+
+  /**************** RESUME ****************/
+  .resumeEmbed{
+    /* height: 40vh; */
+    width: 80%;
   }
 }
 
 /* *************************MOBILE DEVICE SECTION************************* */
 @media only screen and (max-width: 800px) {
-  /* #about {
 
+  /**************** HOME ****************/
+  .box {
+    height: 325px;
+    width: 325px;
+  }
+  .projectsTop, .projectsBottom {
+    display: flex;
+    /* grid-auto-rows: 100;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    gap: 1rem; */
+    gap: 1rem;
+    flex-direction: column;
+    width: 80%;
+  }
+  .projectHover p, .projectHover .projectSkill, .projectHover .projectLink {
+    font-size: .75rem;
+  }
+  .projectHover h3 {
+    font-size: 1.25rem;
+  }
+  .projectSkill, .projectLink {
+    padding: .15rem .35rem;
+  }
+
+
+  /**************** ABOUT ****************/
+  #about {
+    padding: 1rem 0 5rem;
   }
   .aboutSections {
-
-  } */
+    grid-template-columns: 100%;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-
+  /**************** NAVBAR ****************/
+  .navBarTop {
+    padding: 0 1rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  /**************** HOME ****************/
+  .homeIntro {
+    gap: 6rem;
+    padding-bottom: 2rem;
+    height: 100vh;
+  }
+  .homeIntroL {
+    margin-top: 2rem;
+  }
+  .box {
+    height: 225px;
+    width: 225px;
+  }
+  .skillsToolLogo {
+    font-size: 3rem;
+    flex: 1 0 1%;
+    padding: .15rem 1rem;
+  }
 
+
+
+  /**************** ABOUT ****************/
+  .aboutImage {
+    height: 100%;
+    width: 70%;
+  }
+
+  /**************** RESUME ****************/
+  #resume {
+    padding: 1rem 0 5rem;
+  }
+  .resumeImage {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-
+  /**************** RESUME ****************/
+  #resume {
+    padding: 5rem 0 8rem;
+  }
 }
