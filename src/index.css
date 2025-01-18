@@ -289,6 +289,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 2rem;
   position: relative;
   /* text-align: center; */
@@ -780,7 +781,7 @@
 
   /**************** NAVBAR ****************/
   .navBarTop {
-    padding: 0 2rem;
+    padding: 3rem 2rem;
   }
   .navBarBottom {
     display: flex;
@@ -822,11 +823,23 @@
   .homeIntroL {
     width: 80%;
   }
+  .homeIntroTitle {
+    margin-top: 1rem;
+  }
   .scrollDown {
     margin-top: 3rem;
   }
+  .projectHover {
+    width: 100%;
+  }
   .projectsTop, .projectsBottom {
     width: 90%;
+  }
+  .projectSkill, .projectLinks, .skillTitle {
+    font-size: .8rem;
+  }
+  .project, .project1:hover .projectHover, .project2:hover .projectHover, .project3:hover .projectHover, .project4:hover .projectHover {
+    padding: 2rem 0rem;
   }
   .homeAbilities {
     width: 90%;
