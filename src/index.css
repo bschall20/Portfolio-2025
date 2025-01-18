@@ -628,8 +628,8 @@
   flex-direction: column;
   /* height: 100vh; */
   width: 65%;
-  margin: 3rem auto 2rem;
-  padding: 5rem 0 15rem;
+  margin: 0rem auto 2rem;
+  padding: 7rem 0 15rem;
 }
 #about h1, #about h2, #about h3 {
   color: #1D3557;
@@ -819,8 +819,10 @@
   /**************** HOME ****************/
   .homeIntro {
     flex-direction: column;
+    justify-content: start;
   }
   .homeIntroL {
+    margin-bottom: 8rem;
     width: 80%;
   }
   .homeIntroTitle {
@@ -907,7 +909,7 @@
 @media only screen and (max-width: 650px) {
   /**************** NAVBAR ****************/
   .navBarTop {
-    padding: 0 1rem;
+    padding: 3rem 2rem;
   }
 }
 
@@ -915,11 +917,11 @@
   /**************** HOME ****************/
   .homeIntro {
     gap: 6rem;
-    padding-bottom: 2rem;
     height: 100vh;
   }
   .homeIntroL {
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .box {
     height: 225px;
@@ -950,6 +952,9 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .navBarTop {
+    padding: 3rem 1rem;
+  }
   /**************** RESUME ****************/
   #resume {
     padding: 5rem 0 8rem;
