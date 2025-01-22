@@ -323,6 +323,7 @@
 .projectSkills, .projectLinks{
   color: #000;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   width: 80%;
@@ -628,8 +629,8 @@
   flex-direction: column;
   /* height: 100vh; */
   width: 65%;
-  margin: 0rem auto 2rem;
-  padding: 7rem 0 15rem;
+  margin: 0rem auto 19rem;
+  padding: 7rem 0 10rem;
 }
 #about h1, #about h2, #about h3 {
   color: #1D3557;
@@ -738,21 +739,32 @@
 
 
 /* *************************LARGE DEVICE SECTION************************* */
+@media only screen and (max-width: 1656px) {
+  /**************** HOME ****************/
+  .skillsToolLogo {
+    font-size: 3.2rem;
+    flex: 1 0 1%;
+  }
+}
 @media only screen and (max-width: 1600px) {
-  /**************** ABOUT ****************/
   #about {
     width: 90%;
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
   }
 }
 @media only screen and (max-width: 1500px) {
+  /**************** HOME ****************/
+    .skillsToolLogo {
+      font-size: 2.8rem;
+      flex: 1 0 1%;
+    }
   /**************** ABOUT ****************/
    .aboutSections {
     gap: 4rem;
    }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1330px) {
   /**************** HOME ****************/
   .homeIntro {
     width: 100%;
@@ -762,6 +774,13 @@
   }
   .projectSkills, .projectLinks{
     width: 100%;
+  }
+  .skillTitle{
+    font-size: .8rem;
+  }
+  .skillsToolLogo {
+    font-size: 2.5rem;
+    flex: 1 0 22%;
   }
   /**************** ABOUT ****************/
   .aboutSections {
@@ -823,10 +842,14 @@
   }
   .homeIntroL {
     margin-bottom: 8rem;
+    margin-top: 6rem;
     width: 80%;
   }
   .homeIntroTitle {
     margin-top: 1rem;
+  }
+  .box {
+    margin-top: 4rem;
   }
   .scrollDown {
     margin-top: 3rem;
@@ -837,7 +860,7 @@
   .projectsTop, .projectsBottom {
     width: 90%;
   }
-  .projectSkill, .projectLinks, .skillTitle {
+  .projectSkill, .projectLinks {
     font-size: .8rem;
   }
   .project, .project1:hover .projectHover, .project2:hover .projectHover, .project3:hover .projectHover, .project4:hover .projectHover {
@@ -899,7 +922,8 @@
 
   /**************** ABOUT ****************/
   #about {
-    padding: 1rem 0 5rem;
+    padding: 1rem 0 0;
+    margin-bottom: 3rem;
   }
   .aboutSections {
     grid-template-columns: 100%;
@@ -924,8 +948,9 @@
     margin-bottom: 2rem;
   }
   .box {
-    height: 225px;
-    width: 225px;
+    margin-top: 1rem;
+    height: 250px;
+    width: 250px;
   }
   .skillsToolLogo {
     font-size: 3rem;

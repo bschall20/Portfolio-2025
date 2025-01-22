@@ -1,9 +1,22 @@
+// import React, { useState, useEffect } from 'react';
 import ProjectBox from "../ProjectBox.jsx";
 import Projects from "../../Projects.js"
 import { motion } from "motion/react"
 
 
 const HomeSectionProjects = () => {
+  var projectXValue = 0;
+  if (window.innerWidth > 1200){
+    projectXValue = 200;
+  } else if (window.innerWidth < 1200 && window.innerWidth > 1024) {
+    projectXValue = 100;
+  } else if (window.innerWidth < 1024 && window.innerWidth > 820) {
+    projectXValue = 40;
+  } else if (window.innerWidth < 820) {
+    projectXValue = 30;
+  }
+
+  // console.log(`Project Width Value: ${projectXValue}`)
 
 return <section className="homeProjects center">
 <h2>My Projects</h2>
@@ -17,7 +30,7 @@ return <section className="homeProjects center">
     return (
       <motion.div
       key={index}
-      initial={{ opacity: 0, x: -200 }}
+      initial={{ opacity: 0, x: -projectXValue }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0 }}
       viewport={{ once: true }}
@@ -43,7 +56,7 @@ return <section className="homeProjects center">
     return (
       <motion.div
       key={index}
-      initial={{ opacity: 0, x: 200 }}
+      initial={{ opacity: 0, x: projectXValue }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0 }}
       viewport={{ once: true }}
@@ -71,7 +84,7 @@ return <section className="homeProjects center">
     return (
       <motion.div
       key={index}
-      initial={{ opacity: 0, x: -200 }}
+      initial={{ opacity: 0, x: -projectXValue }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0 }}
       viewport={{ once: true }}
@@ -97,7 +110,7 @@ return <section className="homeProjects center">
     return (
       <motion.div
       key={index}
-      initial={{ opacity: 0, x: 200 }}
+      initial={{ opacity: 0, x: projectXValue }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0 }}
       viewport={{ once: true }}
