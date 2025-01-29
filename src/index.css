@@ -83,14 +83,12 @@
   flex-direction: column;
 }
 .navBarTop {
-  /* animation: fade-down 1s; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   height: 6vh;
   padding: 0 8rem;
-  /* font-weight: 500; */
 }
 .smallNavLinks {
   display: none;
@@ -144,26 +142,18 @@
   height: 95vh;
   width: 65%;
   justify-content: space-around;
-  /* flex: 1 1 0; */
 }
 
 
 
 
 .homeIntroL {
-  /* flex: 1 1 0; */
   width: 50%;
 }
 .homeIntroParagraph span, .homeIntroTitle, #home h1, .scrollDown {
   color: #1D3557;
   font-weight: 600;
 }
-/* #home h1 {
-  font-size: 2.75rem;
-} */
-/* #home h3 {
-  font-size: 1.5rem;
-} */
 .homeIntroTitle {
   color: #E63946;
   margin-top: 1rem;
@@ -334,13 +324,11 @@
 .projectSkill {
   border-radius: 25px;
   background-color: #F1FAEE;
-  /* border: 1px solid #F1FAEE; */
   padding: .25rem .5rem;
   font-size: .9rem;
 }
 .projectLink {
   border-radius: 25px;
-  /* background-color: #457B9D; */
   border: 1px solid #457B9D;
   color: #F1FAEE;
   padding: .35rem .65rem;
@@ -401,8 +389,6 @@
 
 /************************************HOME ABILITIES************************************/
 .homeAbilities {
-  /* background-color: #A8DADC;
-  width: 100%; */
   flex-direction: column;
   padding: 1rem 0 2rem;
   width: 65%;
@@ -538,14 +524,9 @@
   background-color: #A8DADC;
   flex-direction: column;
   padding: 1rem 0 2rem;
-  /* width: 65%; */
   width: 100%;
 }
 .contactContent {
-  /* display: flex;
-  flex-direction: row;
-  width: 65%;
-  justify-content: space-evenly; */
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   grid-auto-rows: minmax(20rem, auto);
@@ -566,9 +547,6 @@
   width: 100%;
 }
 .contactForm {
-  /* display: flex;
-  justify-content: space-between;
-  flex-direction: column; */
   height: 100%;
   width: 100%;
 }
@@ -624,10 +602,8 @@
 /**************************************************************/
 #about{
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
-  /* height: 100vh; */
   width: 65%;
   margin: 0rem auto 19rem;
   padding: 7rem 0 10rem;
@@ -639,7 +615,6 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 3rem;
-  /* margin: auto; */
 }
 .aboutText {
   padding-top: 1rem;
@@ -692,10 +667,6 @@
   flex-direction: column;
   margin-top: 1rem;
 }
-/* .resumeEmbed{
-  height: 90vh;
-  width: 100%;
-} */
 .resumeImage {
   border: 1px solid black;
   height: 60%;
@@ -719,9 +690,6 @@
   flex-direction: row;
   height: 6vh;
 }
-/* .footerSocial {
-  margin: auto;
-} */
 .copyrightFooter {
   margin: auto;
 }
@@ -886,7 +854,6 @@
 
   /**************** RESUME ****************/
   .resumeEmbed{
-    /* height: 40vh; */
     width: 80%;
   }
 }
@@ -901,10 +868,6 @@
   }
   .projectsTop, .projectsBottom {
     display: flex;
-    /* grid-auto-rows: 100;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    gap: 1rem; */
     gap: 1rem;
     flex-direction: column;
     width: 80%;

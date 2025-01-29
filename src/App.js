@@ -9,7 +9,6 @@ import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
 import Resume from "./pages/Resume.jsx"
 import Footer from "./components/Footer.jsx"
-import NotFound from "./pages/NotFound.jsx"
 
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/resume' element={<Resume />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path='*' element={<Home />} />
         </Routes>
         <Footer />
       </Router>
